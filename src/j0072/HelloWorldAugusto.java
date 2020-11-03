@@ -5,7 +5,7 @@ import java.lang.Object;
 public class HelloWorldAugusto {
 
 	public static void main(String[] args) {
-		System.out.println("Hello world Augusto nuovo");
+		System.out.println("Hello world Augusto nuovo v3");
 		
 	}	
 
