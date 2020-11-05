@@ -15,7 +15,9 @@ public class TipiPrimitivi {
 		 * 					 a 9.223.372.036.854.775.807)
 		 */
 		
-		byte anni = 29;
+		byte anni = 29; /* Notazione decimale */
+		anni = 035; 	/* Notazione ottale */
+		anni = 0x1D; 	/* Notazione esadecimale */
 		
 		short contaPassi = 30000;
 		
