@@ -1,0 +1,52 @@
+Vocabolario del linguaggio Java
+
+ 1. package
+ 2. import
+ 3. public
+ 4. class
+ 5. static
+ 6. new
+ 7. int
+ 8. String
+ 9. ...
+10. []
+11. +
+12. +=
+13. return
+14. final
+15. for(){}
+
+***********************************
+
+    Librerie Java
+
+Dalla libreria java.lang.*
+ 1. System.out.println
+ 2. System.out.print
+ 3. split
+ 4. Integer.parseInt
+
+Dalla libreria java.util.*
+ 1. Scanner(System.in)
+ 2. nextLine
+ 
+ ***********************************
+ 
+   	Comandi Git
+ 1. add
+ 2. commit
+ 3. fetch
+ 4. rebase
+ 5. push
+ 6. pull
+ Lista completa dei comandi Git: https://git-scm.com/docs
+
+  ***********************************
+ 
+   	Comandi Java
+ 1. javac -cp .
+ 2. java -cp .
+ Lista completa dei comandi Java:
+ https://docs.oracle.com/javase/9/tools/tools-and-command-reference.htm#JSWOR596
+ 
+ 
