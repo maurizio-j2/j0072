@@ -15,6 +15,10 @@ Vocabolario del linguaggio Java
 13. return
 14. final
 15. for(){}
+16. if(){}
+17. byte
+18. short
+19. long
 
 ***********************************
 
