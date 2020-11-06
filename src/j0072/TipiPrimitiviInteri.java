@@ -1,6 +1,6 @@
 package j0072;
 
-public class TipiPrimitivi {
+public class TipiPrimitiviInteri {
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {

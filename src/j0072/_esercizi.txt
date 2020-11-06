@@ -1,0 +1,16 @@
+
+*** Esercizio N. 1 ***
+*** Da consegnare entro il giorno 11/11/2020 ***
+*** Richiesta: ***
+
+Ricopia la classe Aritmetica presente sul package Models
+all'interno del tuo package.
+Sulla classe copiata, aggiungi 4 parametri,
+uno per ogni tipo primitivo intero, che siano condivisi
+con tutte le istanze di quella classe.
+La classe si potrà costruire soltanto se essa riceverà
+un numero intero.
+In fase di costruzione, verrà verificata la grandezza
+del numero passato e verrà assegnato
+al parametro condiviso che meglio lo rappresenta.
+********************************************************
