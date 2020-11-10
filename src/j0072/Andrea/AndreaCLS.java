@@ -3,6 +3,12 @@ package j0072.Andrea;
 public class AndreaCLS {
 
 	public static void main(String[] args) {
+		Aritmetica calcolatrice = new Aritmetica (12);
+		
+		System.out.println("la variabile byte è: " + calcolatrice.AD_BYTE);
+		System.out.println("la variabile short è: " + calcolatrice.AD_SHORT);
+		System.out.println("la variabile int è: " + calcolatrice.AD_INT);
+		System.out.println("la variabile long è: " + calcolatrice.AD_LONG);
 		/* 4 variabili: 
 		 * 
 		 * nome, cognome, lunghezzanome, lunghezzacognome
