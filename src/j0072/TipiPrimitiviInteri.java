@@ -8,16 +8,19 @@ public class TipiPrimitiviInteri {
 		/* Tipi primitivi interi
 		 * 
 		 * byte  (8 bit)  (da -128 a +127)
-		 * short (16 bit) (da -32.768 a +32.767)
-		 * int 	 (32 bit) (da -2.147.483.648
-		 * 				    a +2.147.483.647)
-		 * long  (64 bit) (da -9.223.372.036.854.775.808
-		 * 					 a 9.223.372.036.854.775.807)
+		 * 
+		 * short (16 bit) (da -32768 a +32767)
+		 * 
+		 * int 	 (32 bit) (da -2147483648
+		 * 				    a +2147483647)
+		 * 
+		 * long  (64 bit) (da -9223372036854775808
+		 * 					a +9223372036854775807)
 		 */
 		
 		byte anni = 29; /* Notazione decimale */
-		anni = 035; 	/* Notazione ottale */
-		anni = 0x1D; 	/* Notazione esadecimale */
+		anni = 035; 	/* Notazione ottale del num. 29 */
+		anni = 0x1D; 	/* Notazione esadecimale del num. 29 */
 		
 		short contaPassi = 30000;
 		
@@ -55,7 +58,8 @@ public class TipiPrimitiviInteri {
 		/* Altro tipo di errore è questo:
 		 * long l = 3000000000; 
 		 * Questo produce un errore poichè il numero 3 miliardi,
-		 * essendo un int, supera il massimo valore ammesso per un int.
+		 * essendo un int per default, supera il valore massimo
+		 * ammesso per un int.
 		 * Quindi devo mettere la L per dire al compilatore
 		 * che lo deve memorizzare come un long.
 		 * L'istruzione corretta è:
