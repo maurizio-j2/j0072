@@ -19,7 +19,7 @@ public class CondizioneIF {
 		 * */
 		
 		byte a, b, c = 0;
-		 a= 1;
+		 a = 1;
 		 b = 2;
 		 c = 3;
 		 
@@ -50,7 +50,7 @@ public class CondizioneIF {
 			/* Il costrutto condizionale IF... ELSE IF
 			 * SE (if) si verifica una certa condizione
 			 * esegui un set di istruzioni
-			 * ALTRIMENTI (else)
+			 * ALTRIMENTI SE (else if)
 			 * esegui un'altro sei di istruzioni.
 			 * Esempio: */
 		 if ( a == b ) {

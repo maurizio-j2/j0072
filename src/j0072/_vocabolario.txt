@@ -19,6 +19,9 @@ Vocabolario del linguaggio Java
 17. byte
 18. short
 19. long
+20. if(){} else {}
+21. if(){} else if(){}
+23. if(){} else if(){} else {}
 
 ***********************************
 

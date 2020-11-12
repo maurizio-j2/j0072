@@ -41,7 +41,7 @@ public class TipiPrimitiviInteri {
 		anni = (byte)(anni + 1);
 		
 		/* Errori di compilazione: 
-		byte b = 128; (il massimo per short è 127)
+		byte b = 128; (il massimo per byte è 127)
 		short s = 32768; (il massimo per short è 32767)
 		int i = 2147483648; (il massimo per int è 2147483647) */
 		

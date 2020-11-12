@@ -2,11 +2,36 @@ package j0072.Models;
 
 public class Aritmetica {
 	
-	// COSTRUTTORE: assente
-	// Verrà usato il costruttore di default
+	/* *** Esercizio del 10/11/2020 *** */
+	public static byte BY;
+	public static short SH;
+	public static int IN;
+	public static long LO;
 	
-	
-	
+	/* Costruttore */
+	public Aritmetica(long number) {
+		if (   number >= -128 
+			&& number <= 127) BY = (byte) number;
+		
+		else if (   number >= -32768
+				 && number <= 32767) SH = (short) number;
+		
+		else if (   number >= -2147483648
+				 && number <= 2147483647) IN = (int) number;
+		
+		else if (   number >= -9223372036854775808L 
+				 && number <= 9223372036854775807L) LO = number;
+	}
+	/* I numeri presenti all'interno dei vari if 
+	 * vengono rappresentati dal compilarore come int */
+	/* *** fine Esercizio 1 *** */
+
+	/* Dichiaro anche il costruttore vuoto affinche'
+	 * questa classe possa funzionare 
+	 * anche con gli esempi precedenti*/
+	public Aritmetica() {
+		
+	}
 	// METODO Moltiplica
 	// Questo metodo moltiplica due numeri interi
 	public int Moltiplica(int valore1, int valore2) {
