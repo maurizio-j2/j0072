@@ -22,6 +22,10 @@ Vocabolario del linguaggio Java
 20. if(){} else {}
 21. if(){} else if(){}
 23. if(){} else if(){} else {}
+24. float
+25. double
+26. boolean
+27. char
 
 ***********************************
 
