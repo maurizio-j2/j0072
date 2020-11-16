@@ -4,7 +4,7 @@ public class GiulianoCLS {
 
 	public static void main (String[] args) {
 	
-	Aritmetica Calcolatrice = new Aritmetica (222);
+	Aritmetica Calcolatrice = new Aritmetica (11111);
 	
 	System.out.println("BYTE " + Calcolatrice.a);
 	
