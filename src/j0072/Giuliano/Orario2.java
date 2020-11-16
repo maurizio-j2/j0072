@@ -5,7 +5,7 @@ public class Orario2
 
 		public static void main(String args[]) {
 			// input
-			int orario = 37984;
+			int orario = 50000;
 			
 			// output
 			int ore, minuti, secondi;
@@ -17,6 +17,15 @@ public class Orario2
 			
 			// stampa orario
 			System.out.println("Orario: " + ore + ":" + minuti + ":" + secondi );
+			
+			if ((ore >= 12 ) && (ore <=17))
+			{
+				System.out.println("Buon Pomeriggio");
+			}
+			else
+			{
+				System.out.println ("Buona Giornata");
+			}
 
 		}
 
