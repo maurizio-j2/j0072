@@ -1,4 +1,16 @@
 
+*** Esercizio N. 2 ***
+*** Da consegnare entro il 19/11/2020 ***
+*** Richiesta: ***
+
+Definire la classe Lotto.
+Definire un array bidimensionale che contenga le prime 3 ruote del gioco del Lotto.
+Definire una classe istanzi l'array e, scorrendo gli elementi, lo visualizzi a video.
+
+Al termne, eseguire il 'Push' sul repository.
+********************************************************
+
+
 *** Esercizio N. 1 ***
 *** Esercitazione del 10/11/2020 ***
 *** Richiesta: ***
