@@ -3,7 +3,7 @@ package j0072.Giuliano;
 public class Aritmetica {
 	
 		
-		// esempio
+		// esempio-1
 		public static byte a;
 		public static short b;
 		public static int c;
