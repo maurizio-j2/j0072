@@ -2,6 +2,7 @@ package j0072.Giuliano;
 
 public class GiulianoCLS {
 
+	@SuppressWarnings("static-access")
 	public static void main (String[] args) {
 	
 	Aritmetica Calcolatrice = new Aritmetica (2);
