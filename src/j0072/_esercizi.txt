@@ -1,4 +1,19 @@
 
+*** Esercizio N. 3 ***
+*** Da consegnare entro il 24/11/2020 ***
+*** Richiesta: ***
+
+Modificare l'esercizio N. 2 affinchè venga simulata una
+vera estrazione del lotto per le tre ruote implementate
+utilizzando il metodo random() della classe Math
+verificando progressivamente durante l'estrazione
+che il numero estratto casualmente non sia già presente
+tra i numeri precedentemente estratti.
+
+Al termne, eseguire il 'Push' sul repository.
+********************************************************
+
+
 *** Esercizio N. 2 ***
 *** Da consegnare entro il 19/11/2020 ***
 *** Richiesta: ***

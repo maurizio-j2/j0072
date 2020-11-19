@@ -9,6 +9,7 @@ public class UsaAritmetica {
 		// DICHIARO E ISTANZIO
 		Aritmetica calcolatrice = new Aritmetica();
 		
+
 		// Uso il metodo Moltiplica
 		System.out.println("Moltiplico 3 e 2 ");
 		System.out.println("Risultato: " + calcolatrice.Moltiplica(3,2));
@@ -23,6 +24,14 @@ public class UsaAritmetica {
 		System.out.println("SH = "+ oggettoCalc.SH);
 		System.out.println("IN = "+ oggettoCalc.IN);
 		System.out.println("LO = "+ oggettoCalc.LO);
+		
+		
+		// Genero 128 numeri casuali
+		for (byte indice = 0; indice < 127; indice++) {
+			System.out.println(
+					calcolatrice.GeneraNumeroCasuale((byte)1, (byte)90)
+					);
+		}
 	}
 
 }

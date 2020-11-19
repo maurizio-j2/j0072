@@ -1,6 +1,6 @@
 package j0072.Models;
 
-public class Aritmetica {
+public class AritmeticaOld {
 	
 	/* *** Esercizio del 10/11/2020 *** */
 	public static byte BY;
@@ -9,7 +9,7 @@ public class Aritmetica {
 	public static long LO;
 	
 	/* Costruttore */
-	public Aritmetica(long number) {
+	public AritmeticaOld(long number) {
 		if (   number >= -128 
 			&& number <= 127) BY = (byte) number;
 		
@@ -29,7 +29,7 @@ public class Aritmetica {
 	/* Dichiaro anche il costruttore vuoto affinche'
 	 * questa classe possa funzionare 
 	 * anche con gli esempi precedenti*/
-	public Aritmetica() {
+	public AritmeticaOld() {
 		
 	}
 	// METODO Moltiplica

@@ -40,6 +40,7 @@ Dalla libreria java.lang.*
 Dalla libreria java.util.*
  1. Scanner(System.in)
  2. nextLine
+ 3. Math.random()
  
  ***********************************
  
@@ -57,6 +58,7 @@ Dalla libreria java.util.*
    	Comandi Java
  1. javac -cp .
  2. java -cp .
+ 3. javadoc
  Lista completa dei comandi Java:
  https://docs.oracle.com/javase/9/tools/tools-and-command-reference.htm#JSWOR596
  
