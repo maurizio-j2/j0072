@@ -42,6 +42,11 @@ Dalla libreria java.util.*
  2. nextLine
  3. Math.random()
  
+ Libreria 	java.awt.*
+ 			java.awt.event.*
+ 
+ Libreria	javax.swing.*
+ 
  ***********************************
  
    	Comandi Git
