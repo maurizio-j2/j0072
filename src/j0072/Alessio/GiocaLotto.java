@@ -1,24 +1,60 @@
 package j0072.Alessio;
-import java.util.*;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class GiocaLotto {
 
 	@SuppressWarnings({ "unused", "resource" })
 	public static void main(String[] args) {
+		
+		 JLabel label = new JLabel();
+		 JFrame finestra = new JFrame("Finestra di esempio");
+		 JPanel panel = new JPanel();  
+	        panel.setLayout(new FlowLayout()); 
+	        JButton button = new JButton();  
+	        button.setText("Bottone di esempio");
 			Ruote mie_ruote = new Ruote();
 		
 			System.out.println("Ecco la lista delle ruote e dei rispettivi numeri");
+			
 			Ruota[]lista_ruote = mie_ruote.CreaRuote();
+			
 			for (Ruota singola_ruota : lista_ruote) {
-			System.out.println(singola_ruota.nome + " " 
+				final String result =(singola_ruota.nome + " " 
 		            + singola_ruota.primonumero + " " 
 					+ singola_ruota.secondonumero + " " 
 					+ singola_ruota.terzonumero + " "
 					+ singola_ruota.quartonumero + " "
 					+ singola_ruota.quintonumero);
+				
+				 System.out.println(result);
+			label.setSize(800,400);
+		
+			label.setText(result);
+				 
+			        panel.add(label);  
+			      
+			        finestra.add(panel);  
+			        finestra.setSize(800, 400);  
+			    	finestra.setLocationRelativeTo(null);  
+			    	finestra.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
+			    	finestra.setVisible(true); 
+			        
 			}
+			
+			
+		
+	      
 	
-			System.out.println("Digita un numero da 1 a 5");
+	
+			/* 
+			 * 
+			 * System.out.println("Digita un numero da 1 a 5");
 			Scanner input = new Scanner(System.in);
 			String numero_scelto = input.nextLine();
 			System.out.println ("Digita ora la ruota che vuoi giocare");
@@ -79,9 +115,10 @@ public class GiocaLotto {
 
 			}
 			
-			
+			*/
 			
 	
-	} 
-	
+    }   
 }	
+	
+	
