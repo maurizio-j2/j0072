@@ -2,8 +2,6 @@ package j0072.Andrea;
 
 
 public class LottoAndrea {
-
-    
 	
 	public String[][] DammiArrayRuota ()  {
 		String[][] Ruota = {  
@@ -13,6 +11,9 @@ public class LottoAndrea {
 		return Ruota;   
 		
     }
+    
+	
+	
 	
 }
 
