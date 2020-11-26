@@ -1,26 +1,10 @@
 package j0072.Giuliano;
 
-import j0072.Lotto.Ruota;
-
-/**
- * Questa classe definisce il modello Lotto. <br />
- * Tale modello avrà solo 3 ruote: Milano, Roma, Palermo. 
- * @author Maurizio
- *
- */
 public class Lotto {
 	
-	/** Variabile di classe che contiene l'array con le tre ruote*/
+	
 	public Ruota[] ruote;
 	
-	/** La classe Lotto potrà essere costruita istanziando 
-	 * tre oggetti di tipo ruota. 
-	 * Nel loro istanziamento dovrà obbligatoriamente essere specificato
-	 * il nome della ruota. Inoltre si otterrà  l'effetto che 
-	 * l'array di byte verrà inizializzato ai valori nulli (cioè a zero).
-	 * Infine, il costruttore valorizzerà anche l'array "ruote",
-	 * che è la variabile pubblica di questa classe.
-	 */
 	public Lotto() {
 		Ruota mi = new Ruota("Milano");
 		Ruota rm = new Ruota("Roma");
@@ -35,10 +19,6 @@ public class Lotto {
 
 	}
 	
-	/** 
-	 * Il metodo StampaRuote
-	 * stampa le ruote mediante un ciclo for(){}
-	 */
 	public void StampaRuote() {
 		for (Ruota ruota : ruote) {
 			System.out.print(ruota.citta + " ");
@@ -49,20 +29,11 @@ public class Lotto {
 		}
 	}
 	
-	/** 
-	 * Il metodo GeneraNumeroCasuale
-	 * genera un numero casuale compreso tra due estremi
-	 * mediante la funzione Math.random()
-	 * */
 	public byte GeneraNumeroCasuale(byte estremo1, byte estremo2) {
 		byte numerocasuale = (byte) ((Math.random() * estremo2) + estremo1);
 		return numerocasuale;
 	}
 	
-	/**
-	 * Il metodo Estrai
-	 * genera l'estrazione per le tre ruote. 
-	 */
 	public void Estrai() {
 		/*Per tutte le ruote: */
 		for (Ruota ruota : ruote) {
