@@ -26,6 +26,13 @@ Vocabolario del linguaggio Java
 25. double
 26. boolean
 27. char
+28. while
+29. ?
+30. do while
+31. switch case
+32. break
+33. continue
+34. try catch
 
 ***********************************
 
@@ -36,14 +43,22 @@ Dalla libreria java.lang.*
  2. System.out.print
  3. split
  4. Integer.parseInt
+ 5. System.exit(0);
 
 Dalla libreria java.util.*
  1. Scanner(System.in)
  2. nextLine
  3. Math.random()
+ 4. Scanner(file)
  
  Libreria 	java.awt.*
  			java.awt.event.*
+ 			addWindowListener
+ 			WindowAdapter
+ 			WindowEvent
+ 			ActionListener
+ 			actionPerformed
+ 			ActionEvent
  
  Libreria	javax.swing.*
  

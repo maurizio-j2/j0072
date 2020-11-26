@@ -38,7 +38,7 @@ public class CercaNumero {
 		Button bottone = new Button("Cerca numero");  
 		bottone.setBounds(260,100,100,30);
 
-		
+
 
 		// Gestione del click sul bottone
 		bottone.addActionListener(new ActionListener(){ 
@@ -54,7 +54,7 @@ public class CercaNumero {
 
 					// "Fino a quando" (while) ho linee da poter scorrere su "mieicontatti"
 					while (mieicontatti.hasNextLine()) {
-						
+
 						// Eseguo lo split tra il nome ed il numero
 						// che sono separati dalla virgola
 						String[] contatto = mieicontatti.nextLine().split(",");
@@ -66,15 +66,16 @@ public class CercaNumero {
 							risultato.setText(contatto[1]);
 						}
 					}
-					
+
 					// Chiudo l'oggetto Scanner
 					mieicontatti.close();
-					
-				} catch (FileNotFoundException err1) {
+				}
+				catch (FileNotFoundException err1) {
 					System.out.println("File non trovato");
-				} catch (NullPointerException err2) {
-					System.out.println("Puntamento non trovato");
-				} 
+				}
+				catch (NullPointerException err2) {
+					System.out.println("Errato link al file");
+				}
 			}  
 		});
 
