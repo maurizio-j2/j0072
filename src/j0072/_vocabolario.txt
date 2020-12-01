@@ -33,6 +33,9 @@ Vocabolario del linguaggio Java
 32. break
 33. continue
 34. try catch
+35. finally
+36. throw
+37. throws
 
 ***********************************
 
@@ -44,6 +47,10 @@ Dalla libreria java.lang.*
  3. split
  4. Integer.parseInt
  5. System.exit(0);
+ 6. Exception
+ 7. ArithmeticExcepion
+ 8. NullPointerException
+ 9. FileNotFoundException
 
 Dalla libreria java.util.*
  1. Scanner(System.in)
