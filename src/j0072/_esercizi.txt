@@ -1,4 +1,17 @@
 
+*** Esercizio N. 4 ***
+*** Da consegnare entro il 08/12/2020 ***
+*** Richiesta: ***
+
+Modificare la classe punto affinchè i suoi attributi x ed y
+siano compresi nell'intervallo -10 +10 per la variabile x
+e -20 +20 per la variabile y
+attraverso utilizzo dell'incapsulamento.
+
+Al termne, eseguire il 'Push' sul repository.
+********************************************************
+
+
 *** Esercizio N. 3 ***
 *** Da consegnare entro il 24/11/2020 ***
 *** Richiesta: ***
