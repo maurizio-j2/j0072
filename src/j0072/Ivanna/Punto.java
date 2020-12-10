@@ -1,4 +1,5 @@
 package j0072.Ivanna;
+//commento
 
 // Definizione di Punto
 
@@ -20,10 +21,10 @@ else {
 		}
 	
 	
+		
 			public int getX() {
 				return X;
 			}
-			
 			
 		public void setY(int numero2) {
 			if (numero2 >= -20 && numero2 <= 20) {
