@@ -1,11 +1,10 @@
 package j0072.Augusto.Gestionale;
 
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.Scanner;
-import j0072.Augusto.Gestionale.Utente;
+
 
 public class Login {
 
@@ -25,7 +24,7 @@ public class Login {
 		File file = new File(url.getPath());
 		Scanner datiAccesso = new Scanner(file);
 		
-		Utente[] utenti = Utente[2];
+		Utente[] utenti = new Utente[2];
 		
 		// fino a che il file di testo ha linee divido per la virgola
 		while (datiAccesso.hasNextLine()) {
