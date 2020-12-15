@@ -19,7 +19,7 @@ public class GestionaleGUI {
         
         menubar=new MenuBar();  
 
-        // Esempio di menù
+        // Esempio di menï¿½
         Menu menu1=new Menu("Menu di esempio");  
         MenuItem elemento1=new MenuItem("Voce n. 1");  
 
@@ -95,13 +95,14 @@ public class GestionaleGUI {
 	private void CreaMenuInBaseAlRuolo() {
         Menu menuruolo = new Menu();
         byte k;
-        for (k=0; k < /* Per tutta la luncherra dell'array Menù */; ++k) {
+        for (k=0; k < this.anagrafica.Getmenu().length/* Per tutta la luncherra dell'array Menï¿½ */; ++k) {
         	if ( k==0 ) {
-        		/* Setto la prima voce del menù */
-        		menuruolo.setLabel(this.anagrafica.getMenu()[0]);
+        		/* Setto la prima voce del menï¿½ */
+        		menuruolo.setLabel(this.anagrafica.Getmenu()[0]);
         	} else {
-        		/* Setto le voci seguenti del menù */
-                MenuItem vocemenu = new MenuItem(/* Da completare */);
+        		/* Setto le voci seguenti del menï¿½ */
+                MenuItem vocemenu = new MenuItem(this.anagrafica.Getmenu()[1]);
+                
                 menuruolo.add(vocemenu);
         		
         	}
@@ -110,22 +111,22 @@ public class GestionaleGUI {
         finestra.setMenuBar(menubar);  
 	}
 	
-	// GestionaleGUI si può "costruire" solo se gli passo una matricola valida
-	public GestionaleGUI(/* matricola*/) throws FileNotFoundException {
+	// GestionaleGUI si puï¿½ "costruire" solo se gli passo una matricola valida
+	public GestionaleGUI(String matricola) throws FileNotFoundException {
 		
-		InizializzaComponenti();
-
+		
+		Anagrafica inizializza_anagrafica = new Anagrafica(matricola);
 		// Recupero le informazioni di anagrafica utente
 		// istanziando una nuova classe Anagrafica
 		/* Da completare */
 
-		// Poichè "anagrafica" è una variabile d'istanza
-		this.anagrafica = /* l'oggetto appena istanziato */;
-		
+		// Poichï¿½ "anagrafica" ï¿½ una variabile d'istanza
+		this.anagrafica = inizializza_anagrafica;/* l'oggetto appena istanziato */;
+		InizializzaComponenti();
 		/* Procedo a settare le tre etichette della GUI */
 
 		/* Quindi invoco il metodo CreaMenuInBaseAlRuolo()
-		 * per settare anche il menù*/
+		 * per settare anche il menï¿½*/
 		CreaMenuInBaseAlRuolo();
 
 	}

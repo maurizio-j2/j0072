@@ -70,12 +70,12 @@ public class LoginGUI{
 			public void actionPerformed(ActionEvent e){ 
 				try {
 					Login login = new Login();
-					if (login.VerificaLogin(/* username e password */)) {
+					if (login.VerificaLogin(txtUsername.getText(), txtPassword.getText())) {
 						@SuppressWarnings("unused")
 						GestionaleGUI main_GUI = new GestionaleGUI(/* matricola */);
 					}
 				} catch (LoginException | FileNotFoundException loginEx) {
-					/* visualizzo errore */;
+					risultato.setText("Username o password non validi");
 				}
 			}  
 		});

@@ -13,11 +13,47 @@ public class Anagrafica {
 	private String eta;
 	private String ruolo;
 	private String[] menu;
-
+	
+	public String Getmatricola() {
+		return matricola;
+	}
+	public String Getcognome() {
+		return cognome;
+	}
+	
+	public String Getnome() {
+		return nome;
+	}
+	
+	public String Geteta() {
+		return eta;
+	}
+	
+	public String Getruolo() {
+		return ruolo;
+	}
+	
+	public String[] Getmenu() {
+		return menu;
+	}
 	/* Incapsulare l'accesso a tutte le variabili d'istanza (solo Get) */
 	
-	// Anagrafica si può "costruire" solo se gli passo una matricola valida
-	public Anagrafica(/* matricola */) throws FileNotFoundException {
+	// Anagrafica si puï¿½ "costruire" solo se gli passo una matricola valida
+	public Anagrafica(String matricola) throws FileNotFoundException {
+		URL URLanagrafica = getClass().getResource("Anagrafica.txt");
+		File file_anagrafica = new File(URLanagrafica.getPath());
+		Scanner lista_anagrafica = new Scanner(file_anagrafica);
+		while (lista_anagrafica.hasNextLine()) {
+			String[] anagrafica = lista_anagrafica.nextLine().split(",");
+			if (anagrafica [0].equals(matricola)) {
+				this.cognome = anagrafica [1];
+				this.nome = anagrafica [2];
+				this.eta = anagrafica [3];
+				this.ruolo = anagrafica [4];
+				this.matricola = anagrafica [0];
+				lista_anagrafica.close();
+			}
+		}
 		/* Leggo file Anagrafica.txt */
 		/* while hasNextLine ...*/
 		/*    ...split(",") */
@@ -35,8 +71,8 @@ public class Anagrafica {
 		Scanner lista_menu = new Scanner(file);
 		
 		// Una prima scansione mi serve per determinare
-		// di quanto dovrò dimensionare l'array
-		// che conterrà le voci di menù.
+		// di quanto dovrï¿½ dimensionare l'array
+		// che conterrï¿½ le voci di menï¿½.
 		byte i = 0;
 		while (lista_menu.hasNextLine()) {
 			String[] menu = lista_menu.nextLine().split(",");

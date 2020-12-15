@@ -9,10 +9,23 @@ public class Login {
 
 	private String matricola;
 	
+	public String Getmatricola() {
+		return matricola;
+	}
 	/* Incapsulare l'accesso a matricola (solo Get)*/
 	
-	public boolean VerificaLogin(/* username, password */) throws LoginException, FileNotFoundException  {
+	public boolean VerificaLogin(String username, String password) throws LoginException, FileNotFoundException  {
 		
+		URL URLutente = getClass().getResource("Utente.txt");
+		File file_utente = new File(URLutente.getPath());
+		Scanner lista_utente = new Scanner(file_utente);
+		while (lista_utente.hasNextLine()) {
+			String[] utente = lista_utente.nextLine().split(",");
+			if (utente [1] == username && utente[2] == password) {
+			this.matricola = utente[0];
+				
+			}
+		}
 		/* Leggo file Utente.txt */
 		/* while hasNextLine ...*/
 		/*    ...split(",") */
@@ -20,7 +33,7 @@ public class Login {
 		/*     imposto matricola */
 		/* chiudo il file */
 		
-		/* if matricola è nulla oppure la sua lunghezza è zero... */
+		/* if matricola ï¿½ nulla oppure la sua lunghezza ï¿½ zero... */
 		/* LoginException */
 
 		return true;
