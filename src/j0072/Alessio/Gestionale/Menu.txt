@@ -1,0 +1,9 @@
+Amministratore,Gestione contabile
+Magazziniere,Gestione magazzino
+Amministratore,Fatture
+Magazziniere,Scarico merce
+Magazziniere,Documenti di trasporto
+Amministratore,Pagamenti
+Amministratore,Prima Nota
+Magazziniere,Tracciamento spedizioni
+Amministratore,Bilancio

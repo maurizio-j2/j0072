@@ -1,0 +1,2 @@
+A01,Rossi,Filippo,42,Amministratore
+A02,Bianchi,Mario,36,Magazziniere
