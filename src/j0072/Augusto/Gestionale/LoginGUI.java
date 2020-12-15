@@ -50,6 +50,7 @@ public class LoginGUI{
 					}
 				}
 				);
+
 		finestra.setSize(400,200);  
 		finestra.setLocationRelativeTo(null);
 		finestra.setLayout(null);
@@ -70,12 +71,13 @@ public class LoginGUI{
 			public void actionPerformed(ActionEvent e){ 
 				try {
 					Login login = new Login();
-					if (login.VerificaLogin(/* username e password */)) {
+					
+					if (login.VerificaLogin( txtUsername.getText() + "," + txtPassword.getText() )) {
 						@SuppressWarnings("unused")
 						GestionaleGUI main_GUI = new GestionaleGUI(/* matricola */);
 					}
 				} catch (LoginException | FileNotFoundException loginEx) {
-					/* visualizzo errore */;
+					System.out.println( loginEx.toString() );
 				}
 			}  
 		});
