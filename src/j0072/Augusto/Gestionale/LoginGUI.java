@@ -4,6 +4,10 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.FileNotFoundException;
 
+import j0072.Gestionale.GestionaleGUI;
+import j0072.Gestionale.Login;
+import j0072.Gestionale.LoginException;
+
 public class LoginGUI{
 
 	private static TextField txtUsername;
@@ -71,13 +75,12 @@ public class LoginGUI{
 			public void actionPerformed(ActionEvent e){ 
 				try {
 					Login login = new Login();
-					
-					if (login.VerificaLogin( txtUsername.getText() + "," + txtPassword.getText() )) {
+					if (login.VerificaLogin(txtUsername.getText(), txtPassword.getText())) {
 						@SuppressWarnings("unused")
-						GestionaleGUI main_GUI = new GestionaleGUI(/* matricola */);
+						GestionaleGUI main_GUI = new GestionaleGUI(login.getMatricola());
 					}
 				} catch (LoginException | FileNotFoundException loginEx) {
-					System.out.println( loginEx.toString() );
+					risultato.setText(loginEx.toString());
 				}
 			}  
 		});

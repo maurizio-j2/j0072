@@ -15,25 +15,68 @@ public class Anagrafica {
 	private String[] menu;
 
 	/* Incapsulare l'accesso a tutte le variabili d'istanza (solo Get) */
-	
-	// Anagrafica si può "costruire" solo se gli passo una matricola valida
-	public Anagrafica(/* matricola */) throws FileNotFoundException {
-		/* Leggo file Anagrafica.txt */
-		/* while hasNextLine ...*/
-		/*    ...split(",") */
-		/* if anagrafica[0] = matricola ... */
-		/*     imposto tutte le variabili di istanza */
-		/* chiudo il file */
+	public String getMatricola() {
+		return matricola;
+	}
 
+	public String getCognome() {
+		return cognome;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public String getEta() {
+		return eta;
+	}
+
+	public String getRuolo() {
+		return ruolo;
+	}
+
+	public String[] getMenu() {
+		return menu;
+	}
+
+
+	// Anagrafica si può "costruire" solo se gli passo una matricola valida
+	public Anagrafica( String matricola ) throws FileNotFoundException {
+		/* Leggo file Anagrafica.txt */
+
+		URL url = getClass().getResource("Anagrafica.txt");
+		File file = new File(url.getPath());
+		Scanner lista_anagrafica = new Scanner(file);
+
+		/* while hasNextLine ...*/
+		while ( lista_anagrafica.hasNextLine() ) {
+			/*    ...split(",") */
+
+			String[] anagrafica = lista_anagrafica.nextLine().split(";");		
+			/* if anagrafica[0] = matricola ... */
+
+			if (anagrafica[0].equals(matricola)) {
+				/*     imposto tutte le variabili di istanza */
+				this.matricola 	= 	matricola;
+				this.cognome 	= 	anagrafica[1];
+				this.nome 		= 	anagrafica[2];
+				this.eta 		=	anagrafica[3];
+				this.ruolo 		= 	anagrafica[4];	
+			}
+			
+			/* chiudo il file */
+			lista_anagrafica.close();
+
+		}
 		/* Invoco il metodo DammiMenu per riempire l'array */
 		DammiMenu(this.ruolo);
 	}
-	
+
 	private void DammiMenu(String ruolo) throws FileNotFoundException {
 		URL url = getClass().getResource("Menu.txt");
 		File file = new File(url.getPath());
 		Scanner lista_menu = new Scanner(file);
-		
+
 		// Una prima scansione mi serve per determinare
 		// di quanto dovrò dimensionare l'array
 		// che conterrà le voci di menù.
@@ -44,12 +87,12 @@ public class Anagrafica {
 				++i;
 			}
 		}
-		
+
 		// Resetto lo Scanner
 		lista_menu.close();
 		lista_menu = null;
 		lista_menu = new Scanner(file);
-		
+
 		// Ora posso dimensionare l'array e riempirlo
 		this.menu = new String[i];
 		byte k = 0;
@@ -62,5 +105,5 @@ public class Anagrafica {
 		}	
 		lista_menu.close();
 	}
-	
+
 }

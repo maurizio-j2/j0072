@@ -95,7 +95,7 @@ public class GestionaleGUI {
 	private void CreaMenuInBaseAlRuolo() {
         Menu menuruolo = new Menu();
         byte k;
-        for (k=0; k < /* Per tutta la luncherra dell'array Menù */; ++k) {
+        for (k=0; k < anagrafica.getMenu().length /* Per tutta la luncherra dell'array Menù */; ++k) {
         	if ( k==0 ) {
         		/* Setto la prima voce del menù */
         		menuruolo.setLabel(this.anagrafica.getMenu()[0]);
@@ -111,19 +111,25 @@ public class GestionaleGUI {
 	}
 	
 	// GestionaleGUI si può "costruire" solo se gli passo una matricola valida
-	public GestionaleGUI(/* matricola*/) throws FileNotFoundException {
+	public GestionaleGUI( String matricola ) throws FileNotFoundException {
 		
 		InizializzaComponenti();
 
+		Anagrafica anagraficaUtente = new Anagrafica(matricola);
+		
 		// Recupero le informazioni di anagrafica utente
 		// istanziando una nuova classe Anagrafica
 		/* Da completare */
 
 		// Poichè "anagrafica" è una variabile d'istanza
-		this.anagrafica = /* l'oggetto appena istanziato */;
+		this.anagrafica = /* l'oggetto appena istanziato */ anagraficaUtente;
 		
 		/* Procedo a settare le tre etichette della GUI */
-
+		
+		txtMatricola.setText(anagraficaUtente.getMatricola());
+		txtCognNome.setText(anagraficaUtente.getCognome());
+		txtRuolo.setText(anagraficaUtente.getRuolo());
+		
 		/* Quindi invoco il metodo CreaMenuInBaseAlRuolo()
 		 * per settare anche il menù*/
 		CreaMenuInBaseAlRuolo();
