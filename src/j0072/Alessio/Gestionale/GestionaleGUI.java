@@ -123,6 +123,9 @@ public class GestionaleGUI {
 		// Poich� "anagrafica" � una variabile d'istanza
 		this.anagrafica = inizializza_anagrafica;/* l'oggetto appena istanziato */;
 		InizializzaComponenti();
+		txtMatricola.setText(this.anagrafica.Getmatricola());
+		txtCognNome.setText(this.anagrafica.Getcognome() + " " + this.anagrafica.Getnome());  
+		txtRuolo.setText(this.anagrafica.Getruolo()); 
 		/* Procedo a settare le tre etichette della GUI */
 
 		/* Quindi invoco il metodo CreaMenuInBaseAlRuolo()

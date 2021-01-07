@@ -72,7 +72,7 @@ public class LoginGUI{
 					Login login = new Login();
 					if (login.VerificaLogin(txtUsername.getText(), txtPassword.getText())) {
 						@SuppressWarnings("unused")
-						GestionaleGUI main_GUI = new GestionaleGUI(/* matricola */);
+						GestionaleGUI main_GUI = new GestionaleGUI(login.Getmatricola());
 					}
 				} catch (LoginException | FileNotFoundException loginEx) {
 					risultato.setText("Username o password non validi");
