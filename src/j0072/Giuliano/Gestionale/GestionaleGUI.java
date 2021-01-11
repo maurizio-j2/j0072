@@ -95,17 +95,17 @@ public class GestionaleGUI {
 	private void CreaMenuInBaseAlRuolo() {
         Menu menuruolo = new Menu();
         byte k;
-        for (k=0; k < /* Per tutta la luncherra dell'array Menù */; ++k) {
-        	if ( k==0 ) {
-        		/* Setto la prima voce del menù */
-        		menuruolo.setLabel(this.anagrafica.getMenu()[0]);
-        	} else {
-        		/* Setto le voci seguenti del menù */
-                MenuItem vocemenu = new MenuItem(/* Da completare */);
-                menuruolo.add(vocemenu);
-        		
-        	}
-        }
+//        for (k=0; k < /* Per tutta la luncherra dell'array Menù */; ++k) {
+//        	if ( k==0 ) {
+//        		/* Setto la prima voce del menù */
+//        		menuruolo.setLabel(this.anagrafica.getMenu()[0]);
+//        	} else {
+//        		/* Setto le voci seguenti del menù */
+//                MenuItem vocemenu = new MenuItem(/* Da completare */);
+//                menuruolo.add(vocemenu);
+//        		
+//        	}
+//        }
         menubar.add(menuruolo);
         finestra.setMenuBar(menubar);  
 	}
@@ -120,7 +120,7 @@ public class GestionaleGUI {
 		/* Da completare */
 
 		// Poichè "anagrafica" è una variabile d'istanza
-		this.anagrafica = /* l'oggetto appena istanziato */;
+		// this.anagrafica = /* l'oggetto appena istanziato */;
 		
 		/* Procedo a settare le tre etichette della GUI */
 
